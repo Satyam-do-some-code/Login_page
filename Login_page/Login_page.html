@@ -8,7 +8,7 @@
 </head>
 
 <body>   
-    <form action="/index.html">
+    <form id="forum" action="buttlogin.html">
   
        <h1>Login/Sign in</h1>
 
@@ -21,7 +21,7 @@
 <br>
 
         <label for="Uname" class="lab">Password</label> <br>
-        <input type="text" id="Uname" placeholder="Password" class="in" required>
+        <input type="password" id="pass" placeholder="Password" class="in" required>
 
     </center>
 <br>
@@ -32,12 +32,12 @@
 
 
 <center> 
-       <button id="log">Login</button>
+       <button id="log" >Login</button>
     
     <br>
 
     
-    <input type="checkbox" name="" id="cbox" >
+    <input type="checkbox" name="" id="cbox" onclick="check()">
             <label for="cbox" id="Rem">Remember me</label>  
             
 <br>
@@ -45,9 +45,34 @@
 
 </center>
          
-            <p id="Fpass">Forget Password ?</p>
+           <a href="frgt.html"><p id="Fpass">Forget Password ?</p></a> 
 
     </form>
 </body>
+ <script>
+
+
+     function check(){
+        let saveUserName = document.getElementById("Uname").value;
+        let saveUserPass = document.getElementById("pass").value;
+        alert(`Username : ${saveUserName} \n Password : ${saveUserPass}`);
+     }
+
+     let Form =document.getElementById("forum");
+     Form.addEventListener("submit",function(){
+
+        let username = document.getElementById("Uname").value;
+        console.log(username);
+
+        let userpass = document.getElementById("pass").value;
+        console.log(userpass);
+
+        alert(`${username} logged in ✅`);
+     })
+
+
+    
+
+ </script>
 
 </html>

@@ -13,10 +13,11 @@ h1{
 
     margin-right: 275px;
     font-size: 23px;
-    color: rgba(255, 255, 255, 0.834);
+    color: rgba(30, 28, 28, 0.834);
     font-family: 'Times New Roman', Times, serif;
     
 }
+
 
 .in{
 
@@ -34,15 +35,27 @@ h1{
     border-radius: 120px;
     font-family: 'Times New Roman', Times, serif;
     background-color: rgba(246, 242, 242, 0.693);
+    font-size: 16px;
+}
+#log:hover{
+    height: 40px;
+    width: 150px;
+    border-radius: 120px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(41, 131, 240, 0.693);
+    color: rgb(238, 228, 228);
+    stroke: rgb(57, 183, 217);
+    font-size: 16px;
 }
 
 #Fpass{
 
-    padding-left: 680px;
+    padding-left: 750px;
     margin-top: -18px;
     color: aliceblue;
     font-family: 'Times New Roman', Times, serif;
     color: rgba(240, 248, 255, 0.722);
+    text-decoration: none;
 }
 
 #Rem{
@@ -58,7 +71,7 @@ h1{
 }
 
 body{
-    background-image: url(pexels-kelly-rabie-1878095.jpg);
+    background-image: url(Assets/pexels-kelly-rabie-1878095.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
